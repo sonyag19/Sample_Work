@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+
+         #a{
+            height: 400px;
+            width: 650px;
+            background-color: coral;
+            margin-left: 400px;
+            margin-top: 100px;
+            border-radius: 10px;
+
+         }
+         #b{
+            height: 150px;
+            width:500px;
+            margin-left: 90px;
+            margin-top: 200px;
+         }
+         </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'header.html' %}
+<form method="post">{% csrf_token %}
+<div id="a">
+        <div id="b">
+    <h1>Login Here</h1>
+        <input type="email" class="form-control" name="email" placeholder="Email Address">
+        <br><br>
+        <input type="password" class="form-control" name="password" placeholder="Password"/>
+      <br><br>
+            <input class="form-check-input" type="checkbox" value="" checked />
+            <label class="form-check-label"> Remember me </label>
+          <br><br>
+    <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+        <p>Not a member? <a href="">Register</a></p>
+        </div>
+    </div>
+    </form>
+<br><br>
+{% include 'footer.html' %}
+</body>
+</html>

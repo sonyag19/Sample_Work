@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #a{
+        height: 500px;
+           width: 450px;
+           background-color:white;
+           margin-left: 400px;
+           margin-top: 100px;
+           border-radius: 10px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% include 'header.html' %}
+<form method="post">{% csrf_token %}
+    <div id="a">
+        <a href="http://127.0.0.1:8000/addition/fileupload/" class="btn btn-primary btn-lg">Upload Your File Here</a>
+
+    </form>
+<br><br><br><br>
+{% include 'footer.html' %}
+</body>
+</html>
